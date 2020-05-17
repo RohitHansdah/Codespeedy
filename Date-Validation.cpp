@@ -114,6 +114,7 @@ int main()
          if(quit=='y')
          {
               session=true;
+              cout<<"Thank you,bye,bye!!!"<<endl;
          }
          else
          {
