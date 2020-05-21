@@ -9,6 +9,12 @@ double cdf(double value)
 }
 int main() 
 {
+     int t;
+   cout<<"Enter Number of queries : ";
+   cin>>t;
+   cout<<t<<endl;
+   while(t--)
+   {
 	// calling the cdf function
 	double num,ans;
 	cout<<"Enter a number : ";
@@ -17,5 +23,6 @@ int main()
 	ans=cdf(num);
 	cout<<endl;
 	cout<<"CDF : "<<ans<<endl;
-	return 0;
+   }
+   return 0;
 }
