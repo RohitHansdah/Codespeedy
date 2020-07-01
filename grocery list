@@ -1,1 +1,66 @@
+//html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Practice</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="back">
+  </div>
+  <p id="list-heading">
+    Grocery list
+  </p>
+  </p>
+  <ul id="grocery-list">
+    <li>
+      Rice 2kg
+    </li>
+    <li>
+      Mustard Oil 200ml
+    </li>
+    <li>
+      Banana 3 dozen
+    </li>
+    <li>
+      Spinach
+    </li>
+    <li>
+      Apple 3 dozen
+    </li>
+  </ul>
+  <form>
+    <input type="text" id="new_item" placeholder="enter name"></input>
+  </form>
+  <br>
+  <button id="button">Add more</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+//css
+
+body{
+  background-image:url("background.jpg");
+  background-repeat: no-repeat;
+  margin-left: 50%;
+  background-color: blue;
+}
+
+//js
+
+const list=document.getElementById('grocery-list');
+const add_button=document.getElementById('button');
+const add_item=document.getElementById('new_item');
+add_button.addEventListener('click',()=>{
+    let new_list=document.createElement('li');
+    new_list.innerText=add_item.value;
+    list.appendChild(new_list);
+});
+
 
