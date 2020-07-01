@@ -46,7 +46,7 @@
 //css
 
 body{
-  background-image:url("background.jpg");
+  background-image:url("background1.jpg");
   background-repeat: no-repeat;
   margin-left: 50%;
   background-color: blue;
